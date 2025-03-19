@@ -1,7 +1,18 @@
 ## Hi there 👋
-# 💫 About Me:
-Full-stack developer specializing in the MERN stack and Next.js, currently exploring DevOps to enhance development workflows with CI/CD, automation, and cloud infrastructure. Passionate about building scalable web apps and improving efficiency in deployment pipelines. Always learning and staying up-to-date with modern technologies.
+# 🚀 Amit Kumar Gupta - Full-Stack Developer & DevOps Enthusiast
 
+### **Hi there! 👋**
+I'm a **Full-Stack Developer** specializing in the **MERN stack & Next.js**, with a keen interest in **DevOps, CI/CD, automation, and cloud infrastructure**. Passionate about **building scalable web applications** and optimizing **deployment pipelines** for efficiency.
+
+---
+
+## 📌 **About Me**
+- 🎓 **B.Tech in Production Engineering** - National Institute of Technology Calicut
+- 💻 **5+ Projects** focusing on **real-time systems, high-performance architectures, and automation workflows**.
+- ⚡ Currently diving deeper into **Cloud & DevOps (AWS, Docker, Kubernetes, CI/CD)**.
+- 🏐 Volleyball enthusiast - Played at **Inter-University & NIT-level tournaments**.
+
+---
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/amitaarav_8) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amit-kumar-gupta-040418244) 
@@ -25,6 +36,44 @@ Full-stack developer specializing in the MERN stack and Next.js, currently explo
 ---
 [![](https://visitcount.itsvg.in/api?id=amitaarav&icon=0&color=0)](https://visitcount.itsvg.in)
 
+## 🔥 **Projects & Experience**
+
+### 🔹 [Real-Time Exchange Platform](https://github.com/Amitaarav/exchange-app) *(Jan - Feb 2025)*
+**Tech Stack:** TypeScript, Next.js, Express.js, WebSocket, Redis, PostgreSQL/TimescaleDB  
+✅ **Processes 10,000+ orders/sec** with ultra-low-latency execution.
+✅ Built an event-driven system with **Redis Pub/Sub & WebSockets**, reducing order execution time to **sub-50ms**.
+✅ Created a **real-time trading dashboard** using Next.js & Tailwind CSS, ensuring **99.9% uptime**.
+
+### 🔹 [Automation Platform - TriggerHub](https://github.com/Amitaarav/TriggerHub) *(Nov - Dec 2024)*
+**Tech Stack:** TypeScript, Next.js, Prisma, PostgreSQL, Kafka, Zod  
+✅ Developed an **event-driven pipeline** using Kafka, achieving **99.99% message reliability**.
+✅ Scaled to process **100,000+ events/day** with minimal latency.
+✅ Strengthened security with **JWT authentication & email verification**, reducing unauthorized access attempts by **95%**.
+
+---
+
+## 🛠 **Technical Skills**
+- **Languages:** C, C++, JavaScript, TypeScript, Golang, Python, SQL
+- **Frontend:** React.js, Next.js, Tailwind CSS, WebRTC
+- **Backend:** Node.js, Express.js, WebSockets, Kafka, REST APIs
+- **Databases:** MongoDB, PostgreSQL, Prisma, Redis (Pub/Sub, Queues), TimescaleDB
+- **Cloud & DevOps:** AWS, Docker, Prometheus, Grafana, Kubernetes, CI/CD Pipelines
+- **Other Tools:** Git, Jest, Vitest, Cypress, gRPC, Monorepo
+
+---
+
+## 🎓 **Certifications & Courses**
+- 🏆 **0-100 Fullstack Web Development - Cohort 2.0 (100xDevs)** *(April 2024 - Jan 2025)*
+- 🚀 **Web Development & Blockchain - IITM Summer School** *(June - July 2024)*
+- 🔥 **Contentstack for Developers + Hackathon Certification** *(Sept - Oct 2024)*
+
+---
+
+## 📡 **Connect With Me**
+- 📬 **Email:** [aaravamit555@gmail.com](mailto:aaravamit555@gmail.com)
+- 💼 **LinkedIn:** [linkedin.com/in/amitkrgupta8](https://www.linkedin.com/in/amitkrgupta8)
+- 🔥 **GitHub:** [github.com/Amitaarav](https://github.com/Amitaarav)
+- 🎯 **LeetCode:** [leetcode.com/amit_gupta_512](https://leetcode.com/amit_gupta_512)
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 <!--
 **Amitaarav/Amitaarav** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
