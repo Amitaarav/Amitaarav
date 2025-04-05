@@ -54,7 +54,7 @@ I'm a **Full-Stack Developer** specializing in the **MERN stack & Next.js**, wit
 
 ## 🛠 **Technical Skills**
 - **Languages:** C, C++, JavaScript, TypeScript, Golang, Python, SQL
-- **Frontend:** React.js, Next.js, Tailwind CSS, WebRTC
+- **Frontend:** React.js, Next.js, Redux, Tailwind CSS, WebRTC
 - **Backend:** Node.js, Express.js, WebSockets, Kafka, REST APIs
 - **Databases:** MongoDB, PostgreSQL, Prisma, Redis (Pub/Sub, Queues), TimescaleDB
 - **Cloud & DevOps:** AWS, Docker, Prometheus, Grafana, Kubernetes, CI/CD Pipelines
