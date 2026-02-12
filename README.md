@@ -8,7 +8,7 @@ Focused on **high-performance APIs, reliability engineering, and system design f
 
 ## 👨‍💻 Experience
 
-### 🏢 Junior Software Engineer Intern — Tedekstra (Nov 2025 – Dec 2025)
+### 🏢 Junior Software Engineer — Tedekstra (Nov 2025 – Dec 2025)
 **Tech:** NestJS, TypeScript, PostgreSQL, React, Next.js
 
 - Engineered modular CRM backend services using clean architecture + dependency injection, improving feature delivery velocity by **25%**.
