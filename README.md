@@ -9,24 +9,44 @@ Focused on **high-performance APIs, reliability engineering, and system design f
 
 ## 👨‍💻 Experience
 
-### 🏢 Junior Software Engineer — Tedekstra (Nov 2025 – Dec 2025)
-**Tech:** NestJS, TypeScript, PostgreSQL, React, Next.js
+### 🏢 Full Stack Engineer — Milanam (Sep 2025 – Present)
+**Tech:** Node.js, NestJS, TypeScript, PostgreSQL, Redis, Prisma ORM, 
+AWS S3, Docker, GitHub Actions, Next.js, React, Turborepo
 
-- Engineered modular CRM backend services using clean architecture + dependency injection, improving feature delivery velocity by **25%**.
-- Reduced API latency by **35%** via optimized server-state caching (React Query) and structured DTO validation.
-- Standardized exception filters and interceptors, improving reliability and observability.
+- Served as one of 4 founding engineers owning the complete stack 
+  end-to-end — drove API design, database schema, and production 
+  infrastructure decisions with direct founding-team accountability.
+- Engineered production **OAuth 2.0 + OIDC** auth system with PKCE 
+  (RFC 7636), JWKS token verification, SHA-256 state binding, and 
+  account-wide refresh token revocation — secured **100% of endpoints** 
+  with zero post-launch security incidents.
+- Reduced **PostgreSQL query latency by 45%** by migrating from MongoDB 
+  — applied a type-safe generic repository pattern over Prisma ORM with 
+  composite indexes, soft deletes, and HMAC-encrypted PII across 10+ models.
+- Architected **private AWS S3 file storage** with server-generated 
+  presigned URLs, least-privilege IAM, and post-upload validation — 
+  zero direct bucket exposure with full audit logging.
+- Slashed manual deployment steps by **70%** via GitHub Actions + Docker 
+  with zero-downtime releases; hardened auth routes with rate limiting 
+  and Content Security Policy.
 
 ---
 
-### 🏢 Full Stack Engineer Intern — Milanam (Sep 2025 – Nov 2025)
-**Tech:** Express.js, MongoDB, TypeScript, Docker, Turborepo
+### 🏢 Software Engineer Intern — Tedekstra (Nov 2025 – Dec 2025)
+**Tech:** NestJS, TypeScript, PostgreSQL, React.js, Next.js, 
+React Query, Zustand
 
-- Architected a scalable hyperlocal service marketplace with JWT access + refresh token rotation.
-- Designed lifecycle-driven state modeling and ownership validation for secure workflows.
-- Reduced CI/CD build time by **30%** with Dockerized monorepo infrastructure.
-- Designed backend to support **10K+ monthly service workflows**.
-
----
+- Owned a **CRM project end-to-end** on NestJS and Next.js — 
+  implemented clean architecture with dependency injection, typed DTO 
+  validation, global exception filters, and request interceptors.
+- Cut redundant API calls by **30%** and reduced perceived latency by 
+  **35%** via structured server-state caching with React Query and 
+  stale-while-revalidate patterns.
+- Delivered real-time analytics dashboards with Zustand state management 
+  across **Agile/Scrum** sprint cycles with zero critical regressions.
+- Migrated legacy UI to React.js and Next.js — reduced codebase 
+  complexity by **40%** across **30+ modules** with reusable 
+  component architecture.
 
 ## 🛠 Featured Projects
 
