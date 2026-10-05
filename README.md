@@ -1,3 +1,15 @@
+<p align="center">
+  <img
+    src="./assets/profile-banner.svg"
+    alt="Amit Kumar Gupta — Backend Engineer"
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <b>Backend Engineer · Distributed Systems · Real-Time Infrastructure</b>
+</p>
+
 # 💫 About Me:
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --># 🚀 Amit Kumar Gupta  
 ### Backend Engineer | Distributed Systems | Real-Time Infrastructure
