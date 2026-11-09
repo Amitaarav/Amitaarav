@@ -130,6 +130,6 @@ React Query, Zustand
 
 - Email: **aaravamit555@gmail.com**
 - LinkedIn: https://linkedin.com/in/amitkrgupta8
-- Portfolio: https://amit-portfolio-orpin.vercel.app
+- Portfolio: https://amit-aarav.vercel.app/
 
 </svg>
