@@ -1,124 +1,107 @@
+# Hi, I'm Amit Kumar Gupta 👋
 
-# 💫 About Me:
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --># 🚀 Amit Kumar Gupta  
-### Backend Engineer | Distributed Systems | Real-Time Infrastructure
+### Backend Engineer · Distributed Systems · Fintech & Web3
 
-I build **scalable backend systems**, real-time architectures, and event-driven platforms using **Node.js, TypeScript, PostgreSQL, Redis, and Kafka**.  
-Focused on **high-performance APIs, reliability engineering, and system design fundamentals**.
+I build backend systems that stay correct under load: event-driven pipelines, transactional money flows, and matching engines. B.Tech from NIT Calicut ('25), previously a Founding Backend Engineer.
 
----
+**Open to full-time backend / distributed-systems roles.**
 
-## 👨‍💻 Experience
-
-### 🏢 Full Stack Engineer — Milanam (Sep 2025 – Present)
-**Tech:** Node.js, NestJS, TypeScript, PostgreSQL, Redis, Prisma ORM, 
-AWS S3, Docker, GitHub Actions, Next.js, React, Turborepo
-
-- Served as one of 4 founding engineers owning the complete stack 
-  end-to-end — drove API design, database schema, and production 
-  infrastructure decisions with direct founding-team accountability.
-- Engineered production **OAuth 2.0 + OIDC** auth system with PKCE 
-  (RFC 7636), JWKS token verification, SHA-256 state binding, and 
-  account-wide refresh token revocation — secured **100% of endpoints** 
-  with zero post-launch security incidents.
-- Reduced **PostgreSQL query latency by 45%** by migrating from MongoDB 
-  — applied a type-safe generic repository pattern over Prisma ORM with 
-  composite indexes, soft deletes, and HMAC-encrypted PII across 10+ models.
-- Architected **private AWS S3 file storage** with server-generated 
-  presigned URLs, least-privilege IAM, and post-upload validation — 
-  zero direct bucket exposure with full audit logging.
-- Slashed manual deployment steps by **70%** via GitHub Actions + Docker 
-  with zero-downtime releases; hardened auth routes with rate limiting 
-  and Content Security Policy.
+[![Portfolio](https://img.shields.io/badge/Portfolio-amit--aarav.vercel.app-black?style=flat-square)](https://amit-aarav.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-amitkrgupta8-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/amitkrgupta8)
+[![Email](https://img.shields.io/badge/Email-amitgupta.nitc%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:amitgupta.nitc@gmail.com)
 
 ---
 
-### 🏢 Software Engineer Intern — Tedekstra (Nov 2025 – Dec 2025)
-**Tech:** NestJS, TypeScript, PostgreSQL, React.js, Next.js, 
-React Query, Zustand
+## 🏢 Experience
 
-- Owned a **CRM project end-to-end** on NestJS and Next.js — 
-  implemented clean architecture with dependency injection, typed DTO 
-  validation, global exception filters, and request interceptors.
-- Cut redundant API calls by **30%** and reduced perceived latency by 
-  **35%** via structured server-state caching with React Query and 
-  stale-while-revalidate patterns.
-- Delivered real-time analytics dashboards with Zustand state management 
-  across **Agile/Scrum** sprint cycles with zero critical regressions.
-- Migrated legacy UI to React.js and Next.js — reduced codebase 
-  complexity by **40%** across **30+ modules** with reusable 
-  component architecture.
+**Founding Backend Engineer, Milanam** (Remote) · Sep 2025 – Apr 2026
+`Node.js` `NestJS` `TypeScript` `PostgreSQL` `Redis` `Prisma` `AWS` `Docker`
+
+- Built production authentication with OAuth 2.0 / OIDC (PKCE, JWKS verification, refresh-token revocation) and Redis-backed rate limiting. Zero post-launch security incidents.
+- Migrated MongoDB to PostgreSQL: 10+ relational entities, composite indexes, soft deletes, HMAC-encrypted PII. **45% lower query latency.**
+- Designed a type-safe generic repository over Prisma, cutting cross-service boilerplate by **60%** across 5+ services.
+- Set up private S3 storage (presigned uploads, least-privilege IAM) and GitHub Actions + Docker CI/CD, reducing manual deployment steps by **70%**.
+
+**Software Engineer Intern, Tedekstra** (Remote) · Nov 2025 – Dec 2025
+`NestJS` `TypeScript` `Next.js` `React Query` `Zustand`
+
+- Delivered a full CRM in NestJS: WhatsApp Business / Meta API lead capture, bulk CSV ingestion, and role-based access across 4+ user tiers.
+- Cut redundant network calls by **30%** with typed DTOs, interceptors and React Query caching; reduced frontend complexity by **40%** across 30+ modules.
+
+---
 
 ## 🛠 Featured Projects
 
-### 🔥 Real-Time Exchange Platform  
-[GitHub Repo](https://github.com/Amitaarav/exchange-app)
+### ⚙️ [TriggerHub](https://github.com/Amitaarav/TriggerHub): Distributed Workflow Automation
+`TypeScript` `Node.js` `Kafka` `PostgreSQL` `Next.js`
 
-**Tech:** TypeScript, Redis, WebSockets, TimescaleDB, PostgreSQL  
+Event-driven automation platform built on the **Transactional Outbox pattern**: atomic Postgres writes plus `FOR UPDATE SKIP LOCKED` polling into Kafka. Zero event loss at 100K+ events/day with at-least-once delivery. Includes manual offset commits, exponential-backoff retries, a dead-letter queue, and a pluggable action registry (Email, Solana, Telegram, Discord, Slack).
 
-- Built high-frequency trading engine supporting **10K+ orders/sec**.
-- Achieved **sub-50ms execution latency** using Redis Pub/Sub + WebSockets.
-- Integrated TimescaleDB for hybrid real-time + historical analytics.
-- Sustained **99.9% uptime** under 500K+ simulated daily transactions.
+### 💸 [MoneyTxn](https://github.com/Amitaarav/MoneyTxn): P2P Digital Wallet
+`TypeScript` `Next.js` `Express` `PostgreSQL` `Prisma`
 
----
+ACID-compliant P2P transfers using row-level locking, stress-tested at **5,000+ concurrent transactions with zero double-spends**. Features an HMAC-verified, idempotent bank webhook pipeline with replay protection, and an escrow-style off-ramp.
 
-### ⚙️ TriggerHub — Workflow Automation Engine  
-[GitHub Repo](https://github.com/Amitaarav/TriggerHub)
+### 🦀 [CEX Backend (Rust)](https://github.com/Amitaarav/cex-rust): Exchange Matching Engine
+`Rust` `Actix Web` `Tokio/mpsc`
 
-**Tech:** Next.js, Node.js, PostgreSQL, Kafka, Prisma  
+Exchange backend with actor-style balance workers (no locks in balance logic) and a **price-time priority matching engine** on `BTreeMap` + `VecDeque`. Supports partial fills, cancellation, depth snapshots, and JWT auth. 14 tests. A learning project, documented openly, including its known limits.
 
-- Built distributed automation platform with conditional execution pipelines.
-- Implemented **Transactional Outbox Pattern** with Kafka.
-- Achieved **99.99% event delivery reliability** at **100K+ events/day** scale.
-- Integrated Solana Web3 automation for on-chain workflows.
+### 🔗 [SolMit](https://github.com/Amitaarav/solmit): Solana Token Launchpad & Wallet Toolkit
+`TypeScript` `React` `Solana Web3.js` `Metaplex`
+
+Batches mint creation, ATA setup, minting and Metaplex metadata into a **single atomic transaction** with one wallet approval. Includes Jupiter swaps, Devnet/Mainnet switching, PDA/ATA derivation tooling, and Ed25519 signature verification.
 
 ---
 
-### 💸 MoneyTxn — Scalable Digital Transactions Platform  
-[GitHub Repo](https://github.com/Amitaarav/MoneyTxn)
+## ⚡ Tech Stack
 
-**Tech:** Next.js, Express, PostgreSQL, Prisma  
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
-- Designed ACID-compliant financial workflows supporting **5,000+ concurrent simulations**.
-- Implemented `SELECT FOR UPDATE` row-level locking.
-- Ensured **zero double-spend inconsistencies** via idempotent webhook processing.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![TimescaleDB](https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black)
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ---
 
-## ⚡ Core Technical Skills
+## 🏆 Highlights
 
-**Languages:** TypeScript, JavaScript, Golang, C++, Java, Python  
-**Backend:** Node.js, Express, NestJS, REST APIs, WebSockets, Kafka  
-**Databases:** PostgreSQL, MongoDB, Redis, TimescaleDB  
-**Architecture:** Event-Driven Systems, Transactional Outbox, JWT Auth, Distributed Systems  
-**DevOps:** Docker, AWS, CI/CD, Kubernetes  
-**Blockchain:** Solana Web3.js, Smart Contract Integration  
+- 🧠 500+ DSA problems solved on LeetCode and Codeforces
+- 🏐 All-India NIT Volleyball champion (2024, 2025)
+- 🎓 B.Tech, National Institute of Technology Calicut (2021–2025)
 
 ---
-# 💻 Tech Stack:
-![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Badge Name](https://img.shields.io/badge/tRPC-%232596BE.svg?style=for-the-badge&logo=tRPC&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e) ![Vitest](https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B)
 
----
 ## 📊 GitHub Stats
 
-![](https://github-readme-stats.vercel.app/api?username=amitaarav&theme=dark&hide_border=true&include_all_commits=true)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=amitaarav&theme=dark&hide_border=true&layout=compact)
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=amitaarav&theme=dark&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amitaarav&theme=dark&hide_border=true&layout=compact" alt="Top languages" />
+</p>
 
 ---
 
-## 🏆 Achievements
+## 📫 Let's connect
 
-- 🏐 Winner — All India NIT Volleyball Tournament (2024, 2025)
-- 🧠 Solved 400+ DSA problems (LeetCode & Codeforces)
-- 🏫 B.Tech — National Institute of Technology Calicut
-
----
-
-## 📫 Connect
-
-- Email: **aaravamit555@gmail.com**
-- LinkedIn: https://linkedin.com/in/amitkrgupta8
-- Portfolio: https://amit-aarav.vercel.app/
-
-</svg>
+Open to full-time backend roles. Reach me at [amitgupta.nitc@gmail.com](mailto:amitgupta.nitc@gmail.com) or on [LinkedIn](https://linkedin.com/in/amitkrgupta8).
