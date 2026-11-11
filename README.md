@@ -96,8 +96,8 @@ Batches mint creation, ATA setup, minting and Metaplex metadata into a **single 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=amitaarav&theme=dark&hide_border=true&include_all_commits=true" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amitaarav&theme=dark&hide_border=true&layout=compact" alt="Top languages" />
+  <img height="170" src="./profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub stats" />
+  <img height="170" src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages" />
 </p>
 
 ---
